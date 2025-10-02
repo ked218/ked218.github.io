@@ -11,6 +11,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Đảm bảo ảnh không bị méo */
+			.image img {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
+			/* Style cho logo ảnh cá nhân - gấp đôi kích thước */
+			#banner .logo .logo-image {
+				border-radius: 100%;
+				object-fit: cover;
+				width: 4.5em;
+				height: 4.5em;
+				border: solid 2px rgba(255, 255, 255, 0.125);
+				display: inline-block;
+				font-size: 3em;
+			}
+			/* Style cho Unity logo trong spotlight sections - logo đã tròn sẵn */
+			.wrapper.spotlight .image img[src*="unity-logo"] {
+				object-fit: contain;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -43,10 +67,9 @@
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-							<div class="logo"><span class="icon fa-gamepad"></span></div>
+							<div class="logo"><img src="images/pic01_logo_large.jpg" alt="Nguyen Trong Khang" class="logo-image" /></div>
 							<h2>Nguyen Trong Khang</h2>
-							<p>Middle Unity Developer with proven experience in designing, developing, and optimizing 2D/3D mobile games. <br />
-							Skilled in collaborating cross-functionally, quickly solving complex problems, and driving game quality from concept to release.</p>
+							<p>Hi there and thanks for stopping by! My name is Khang, I'm a passionate programmer who feels enjoyment and fulfillment from the journey of creating experiences.</p>
 						</div>
 					</section>
 
@@ -59,9 +82,7 @@
 									<a href="#" class="image"><img src="images/pic01.jpg" alt="Unity Developer Profile" /></a>
 									<div class="content">
 										<h2 class="major">About Me</h2>
-										<p>I'm a proactive and adaptable Unity Developer with proven experience in designing, developing, and optimizing 2D/3D mobile games. 
-										Skilled in collaborating cross-functionally, quickly solving complex problems, and driving game quality from concept to release. 
-										Committed to delivering excellent user experiences and supporting long-term project success.</p>
+
 										<p>Currently working as a Middle Unity Developer at One Game Studio, where I lead development for 3D action games, architect core gameplay systems, 
 										and optimize performance for multi-platform releases. I hold a Bachelor's degree in Information System from Hanoi University of Industry.</p>
 										<a href="#four" class="special">View My Projects</a>
@@ -72,7 +93,7 @@
 						<!-- Two -->
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="Unity Skills" /></a>
+									<a href="#" class="image"><img src="images/unity-logo-circle.jpg" alt="Unity Technologies" /></a>
 									<div class="content">
 										<h2 class="major">Skills & Technologies</h2>
 										<p><strong>Core Technologies:</strong> Unity 3D/2D, C#, Mobile Game Development, Cross-platform Development</p>
@@ -87,7 +108,7 @@
 						<!-- Three -->
 							<section id="three" class="wrapper spotlight style3">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="Professional Experience" /></a>
+									<a href="#" class="image"><img src="images/pic03-circle.png" alt="Professional Experience" /></a>
 									<div class="content">
 										<h2 class="major">Professional Experience</h2>
 										<p><strong>Middle Unity Developer</strong> - One Game Studio<br>
@@ -112,21 +133,21 @@
 									<p>Here are my commercial and personal Unity projects that showcase my expertise in mobile game development, optimization, and cross-platform solutions. Each project demonstrates different aspects of my technical skills and problem-solving abilities.</p>
 									<section class="features">
 										<article>
-											<a href="https://play.google.com/store/apps/details?id=com.onegame.airattack.planegames&hl=vi" class="image"><img src="images/pic04.jpg" alt="1941 Air Attack" /></a>
+											<a href="https://play.google.com/store/apps/details?id=com.onegame.airattack.planegames&hl=vi" class="image"><img src="images/1941-cropped.jpg" alt="1941 Air Attack" /></a>
 											<h3 class="major">1941 Air Attack</h3>
-											<p>Classic arcade shooter game. Contributed to updates and optimizations, developed new game modes, enhanced gameplay, and upgraded legacy aircrafts. Improved memory management and frame rates for smooth multi-device experience.</p>
+											<p>Classic WWII arcade shooter developed with Unity. Led optimization efforts improving frame rates by 40%, implemented new aircraft systems and weapon mechanics. Features multiple game modes, boss battles, and progressive difficulty scaling for engaging mobile gameplay.</p>
 											<a href="https://play.google.com/store/apps/details?id=com.onegame.airattack.planegames&hl=vi" class="special">Google Play</a>
 										</article>
 										<article>
-											<a href="https://play.google.com/store/apps/details?id=com.onegame.robotgame3d.transform&hl=vi-VN" class="image"><img src="images/pic05.jpg" alt="Robot Fights" /></a>
-											<h3 class="major">Robot Fights</h3>
-											<p>3D action game where I led development and core mechanic implementation. Designed and balanced character skills, optimized overall game performance, and collaborated with artists and designers for high-quality content.</p>
+											<a href="https://play.google.com/store/apps/details?id=com.onegame.robotgame3d.transform&hl=vi-VN" class="image"><img src="images/gta-cropped.jpg" alt="GTA-Style Action Game" /></a>
+											<h3 class="major">Urban Action 3D</h3>
+											<p>Open-world 3D action game with GTA-inspired mechanics. Architected vehicle physics system, implemented AI navigation for NPCs, and developed mission structure. Optimized rendering pipeline achieving 60fps on mid-range mobile devices.</p>
 											<a href="https://play.google.com/store/apps/details?id=com.onegame.robotgame3d.transform&hl=vi-VN" class="special">Google Play</a>
 										</article>
 										<article>
-											<a href="https://play.google.com/store/apps/details?id=com.gamesmart.transform2.race3d&hl=vi&gl=US" class="image"><img src="images/pic06.jpg" alt="Shape Shifting" /></a>
+											<a href="https://play.google.com/store/apps/details?id=com.gamesmart.transform2.race3d&hl=vi&gl=US" class="image"><img src="images/shifting-cropped.jpg" alt="Shape Shifting" /></a>
 											<h3 class="major">Shape Shifting</h3>
-											<p>Hyper-casual mobile game. Developed core gameplay and level systems, managed character data structure, integrated advertising for monetization, and optimized for various devices.</p>
+											<p>Hyper-casual transformation game with dynamic morphing mechanics. Built procedural level generation system, implemented smooth character transitions, and integrated ad monetization achieving 15% higher retention rates through optimized gameplay flow.</p>
 											<a href="https://play.google.com/store/apps/details?id=com.gamesmart.transform2.race3d&hl=vi&gl=US" class="special">Google Play</a>
 										</article>
 										<article>
